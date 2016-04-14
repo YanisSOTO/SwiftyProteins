@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="SwiftyProteins" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="EiO-wj-ewt">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PaJ-KS-PK7">
+                                <rect key="frame" x="138.5" y="294.5" width="138" height="147"/>
+                                <state key="normal" title="I" backgroundImage="touchIDLogin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="77U-33-NKD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EiO-wj-ewt" secondAttribute="bottom" id="369-TK-i9S"/>
+                            <constraint firstItem="PaJ-KS-PK7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="8Vu-CW-knb"/>
+                            <constraint firstAttribute="trailing" secondItem="EiO-wj-ewt" secondAttribute="trailing" id="DkJ-RX-yzQ"/>
+                            <constraint firstItem="PaJ-KS-PK7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:5" id="QgX-Us-Fnh"/>
+                            <constraint firstItem="EiO-wj-ewt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="TNE-JD-LaH"/>
+                            <constraint firstItem="PaJ-KS-PK7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="brd-wF-ZhZ"/>
+                            <constraint firstItem="PaJ-KS-PK7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uKo-1L-lbc"/>
+                            <constraint firstItem="EiO-wj-ewt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vCW-dz-njt"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="loginButton" destination="PaJ-KS-PK7" id="7xe-qL-a8C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7" y="294"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="2000" height="1300"/>
+        <image name="touchIDLogin" width="512" height="512"/>
+    </resources>
+</document>
